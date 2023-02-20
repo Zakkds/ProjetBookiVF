@@ -1,0 +1,574 @@
+* {
+  margin: 0px;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 1em;
+  max-width: 1440px;
+  margin-left: 55px;
+  margin-right: 50px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.logobooki {
+  height: 19px;
+  width: 61px;
+  padding-top: 44px;
+}
+
+.liens {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.lien {
+  display: flex;
+  justify-content: center;
+  border-top: 3px solid transparent;
+  padding: 44px;
+  width: 50%;
+}
+
+.lien:hover {
+  border-top: 3px solid #0065fc;
+  color: #0065fc;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+h1 {
+  margin-top: 63px;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 22px;
+}
+
+h2 {
+  margin-top: 10px;
+  font-family: "Raleway";
+  font-size: 16px;
+  font-weight: 400;
+}
+
+form {
+  display: inline-flex;
+  border: 1px #f2f2f2 solid;
+  border-radius: 2em;
+  max-width: 100%;
+  height: 49px;
+  margin-top: 20px;
+  border-radius: 15px;
+}
+
+.gps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  border-radius: 15px 0px 0px 15px;
+}
+
+.gps i {
+  color: black;
+}
+
+.placeholder {
+  box-sizing: border-box;
+  width: 100%;
+  border-top: 1px #f2f2f2 solid;
+  border-bottom: 1px #f2f2f2 solid;
+  border-left: none;
+  border-right: none;
+}
+
+input::placeholder {
+  color: black;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.rechercher {
+  background-color: #0065fc;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 0 1rem 1rem 0;
+  padding: 0 1.5rem;
+  font-family: "Raleway", "Sans serif";
+  font-size: 1rem;
+}
+
+.rechercher i {
+  display: none;
+}
+
+.recherchericone {
+  color: white;
+}
+
+.lesfiltres {
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: 700;
+}
+
+.lesfiltres a:hover {
+  background-color: #deebff;
+}
+
+.lesfiltres h2 {
+  padding: 0 10px 0 0;
+  font-weight: 700;
+}
+
+.filtres2 {
+  display: flex;
+  align-items: center;
+  border: 2px #d9d9d9 solid;
+  border-radius: 2rem;
+  padding: 10px;
+  margin-right: 1rem;
+}
+
+.filtres2 p {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+i {
+  color: #0065fc;
+}
+
+.filtresorga {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  margin-top: 45px;
+}
+
+.filtresorga h2 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.infoicone {
+  height: 2rem;
+  width: 2rem;
+  min-height: 2rem;
+  min-width: 2rem;
+  border: solid 1px #d9d9d9;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 2.4rem;
+}
+
+main {
+  display: flex;
+}
+
+#marseille {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f2f2f2;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  margin-right: 40px;
+}
+
+#marseille img {
+  border-radius: 20px 20px 0px 0px;
+  object-fit: cover;
+  height: 125px;
+  width: 246px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-top: 23px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 5px solid #ffffff;
+  background-color: #ffffff;
+  border-radius: 20px;
+  margin-bottom: 1.8rem;
+}
+
+.card h2 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.card p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.marseilletitre {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.afficherplus {
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 0.7rem;
+}
+
+#populaires {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #f2f2f2;
+  border-radius: 1.5rem;
+  padding: 1rem;
+  min-width: fit-content;
+}
+
+.populairestitre {
+  display: flex;
+  justify-content: space-between;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.cards2 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 26px;
+}
+.card2 {
+  display: flex;
+  flex-direction: row;
+  border: 5px solid #ffffff;
+  background-color: #ffffff;
+  border-radius: 20px;
+  margin-bottom: 1.8rem;
+}
+
+.card2 h2 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.card2 p {
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+#populaires img {
+  border-radius: 20px 0px 0px 20px;
+  object-fit: cover;
+  height: 144px;
+  width: 137px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+}
+
+.space {
+  flex: 1;
+}
+
+.greystar {
+  color: #f0f2f6;
+}
+
+.activites {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-top: 19px;
+  justify-content: space-between;
+}
+
+.card3 {
+  display: flex;
+  box-shadow: 0 0 20px #0000002e;
+  border-radius: 1rem;
+  flex-direction: column;
+  max-width: 302px;
+  width: calc(100% - 10px);
+}
+
+.imgs {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.activites p {
+  font-family: "Raleway";
+  font-size: 16px;
+  font-weight: 700;
+  padding: 20px;
+}
+
+footer {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #f2f2f2;
+  width: 100%;
+}
+
+.footerlinks {
+  display: flex;
+  flex-direction: column;
+}
+
+footer h1 {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 18px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+footer a {
+  margin-bottom: 15px;
+}
+
+@media (max-width: 1024px) {
+  body {
+    margin-left: calc(20% - 135px);
+    margin-right: calc(20% - 135px);
+  }
+  .info {
+    margin-left: 20px;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #marseille {
+    margin-bottom: 53px;
+    margin-right: 0;
+  }
+
+  #populaires {
+    flex-direction: column;
+  }
+
+  .cards2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .card2 {
+    max-width: 250px;
+  }
+  .activites {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 19px;
+  }
+
+  .card3 {
+    max-width: 182px;
+    margin-right: 10px;
+  }
+
+  .activites p {
+    font-family: "Raleway";
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  .lien {
+    width: 50%;
+    border-bottom: 3px solid #f2f2f2;
+    padding: 44px 0px 44px 0px;
+  }
+
+  .lien:hover {
+    border-bottom: 3px solid #0065fc;
+    border-top: none;
+    color: #0065fc;
+  }
+
+  h1 {
+    margin-top: 31px;
+    margin-left: 22px;
+    margin-right: 30px;
+  }
+  h2 {
+    margin-left: 22px;
+    margin-right: 30px;
+  }
+  main {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #marseille {
+    background-color: white;
+    border-radius: 0;
+    padding: 0;
+  }
+
+  #marseille img {
+    min-width: 300px;
+  }
+
+  #populaires {
+    border-radius: 0;
+  }
+
+  .populairestitre {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .card {
+    box-shadow: 0 0 20px #0000002e;
+    border-radius: 20px;
+  }
+
+  .card h2 {
+    margin-left: 0;
+  }
+
+  .cards2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card2 {
+    max-width: 320px;
+  }
+
+  .card2 h2 {
+    margin-left: 0;
+  }
+
+  .afficherplus {
+    display: none;
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  section h1 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  .activites {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-top: 19px;
+    margin-left: 10px;
+  }
+  .card3 {
+    max-width: 334px;
+    margin-bottom: 20px;
+  }
+
+  .imgs {
+    height: 134px;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footerlinks {
+    margin-left: 30px;
+  }
+  .recherchertext {
+    display: none;
+  }
+  form {
+    margin-top: 36px;
+    margin-left: 22px;
+    margin-right: 21px;
+  }
+  .rechercher i {
+    display: inline;
+  }
+
+  .filtres2 {
+    margin-right: 1rem;
+    margin: 5px;
+    width: 130px;
+  }
+
+  .filtres2 p {
+    font-size: 11px;
+  }
+
+  .lesfiltres {
+    margin-left: 22px;
+  }
+  .filtresorga {
+    display: flex;
+    flex-direction: column;
+  }
+  .recherchericone {
+    display: none;
+  }
+}
